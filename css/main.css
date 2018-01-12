@@ -1,0 +1,66 @@
+/* Los estilos de tu proyecto */
+#form_image {
+  background-image: url(../assets/images/taxi.jpg);
+  height: 80vh;
+  background-position: bottom;
+  background-size: cover;
+}
+
+#drive_image {
+  background-image: url(../assets/images/conduce.jpg);
+  height: 50%;
+  background-position: bottom;
+  background-size: cover;
+}
+.corporate-yellow {
+  background-color: #F7B617;
+  color: white;
+}
+
+form#where_to  div.form-group  #exampleInputName1::placeholder {
+  color: white;
+}
+
+#form_image > div {
+  padding-left: 3%;
+  padding-bottom: 3%;
+  margin-top: 15%;
+}
+
+body > section > div:nth-child(3) > div.media {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  margin-bottom: 3%;
+  margin-top: 3%;
+  border: 2px solid white;
+}
+
+.white-none {
+  background-color: rgba(0,0,0,0.5);
+  color: white;
+
+}
+
+#drive_image > div {
+  padding: 10% 0;
+}
+
+.panel-default>.panel-heading ´{
+  background: yellow;
+}
+
+.white{
+  background-color: white;
+  border: none;
+
+}
+.grey-footer {
+  background-color: #2B2B2B;
+  border: 1px solid #2B2B2B;
+  color: white;
+}
+
+br {
+  width: 100%;
+  border: 1px solid white;
+}
