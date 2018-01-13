@@ -12,10 +12,6 @@
   background-position: bottom;
   background-size: cover;
 }
-.corporate-yellow {
-  background-color: #F7B617;
-  color: white;
-}
 
 form#where_to  div.form-group  #exampleInputName1::placeholder {
   color: white;
@@ -39,24 +35,8 @@ body > section > div:nth-child(3) > div.media {
   border: 2px solid white;
 }
 
-.white-none {
-  background-color: rgba(0,0,0,0.5);
-  color: white;
-
-}
-
 #drive_image > div {
   padding: 10% 0;
-}
-
-.white{
-  background-color: white;
-  border: none;
-}
-.grey-footer {
-  background-color: #2B2B2B;
-  border: 1px solid #2B2B2B;
-  color: white;
 }
 
 br {
@@ -76,7 +56,45 @@ body > section > div:nth-child(5) > div > div > div:nth-child(2) > img {
   margin-top: 20%;
 }
 
+body > section > footer > div > div:nth-child(1) > img {
+  padding-top: 8%;
+}
+
+body > section > footer > div > div:nth-child(3) > div.col-md-2 {
+  padding-top: 35%;
+}
+
+body > section > footer > div > div:nth-child(3) > div.col-md-3 {
+  padding-top: 25%;
+}
+.padding-img-where-to {
+  padding-top: 6%;
+}
+
 /*clase para combiar tamaño de letra */
 .ttulo-prueba {
   font-size: 1.5em;
+}
+
+.pading-footer {
+  padding-bottom: 10%;
+}
+.corporate-yellow {
+  background-color: #F7B617;
+  color: white;
+}
+
+.white{
+  background-color: white;
+  border: none;
+}
+.grey-footer {
+  background-color: #2B2B2B;
+  border: 1px solid #2B2B2B;
+  color: white;
+}
+
+.white-none {
+  background-color: rgba(0,0,0,0.5);
+  color: white;
 }
