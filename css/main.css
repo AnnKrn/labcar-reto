@@ -21,6 +21,10 @@ form#where_to  div.form-group  #exampleInputName1::placeholder {
   color: white;
 }
 
+form#where_to  div.form-group  #exampleInputName2::placeholder {
+  color: white;
+}
+
 #form_image > div {
   padding-left: 3%;
   padding-bottom: 3%;
@@ -45,14 +49,9 @@ body > section > div:nth-child(3) > div.media {
   padding: 10% 0;
 }
 
-.panel-default>.panel-heading ´{
-  background: yellow;
-}
-
 .white{
   background-color: white;
   border: none;
-
 }
 .grey-footer {
   background-color: #2B2B2B;
@@ -63,4 +62,21 @@ body > section > div:nth-child(3) > div.media {
 br {
   width: 100%;
   border: 1px solid white;
+}
+
+body > section > div:nth-child(5) > div > div > div.col-md-6.corporate-yellow {
+  padding: 10% 0;
+}
+
+body > section > div:nth-child(5) > div > div > div:nth-child(2) > img {
+  padding: 10% 0;
+}
+
+#where_to > div:nth-child(1) > div > div.col-md-1 > img {
+  margin-top: 20%;
+}
+
+/*clase para combiar tamaño de letra */
+.ttulo-prueba {
+  font-size: 1.5em;
 }
