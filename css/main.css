@@ -21,6 +21,7 @@ form#where_to  div.form-group  #exampleInputName2::placeholder {
   color: white;
 }
 
+/* estilocoluma disfruta viaje, We want back Jumbotron */
 #form_image > div {
   padding-left: 3%;
   padding-bottom: 3%;
@@ -97,4 +98,13 @@ body > section > footer > div > div:nth-child(3) > div.col-md-3 {
 .white-none {
   background-color: rgba(0,0,0,0.5);
   color: white;
+}
+
+.modal-color-login {
+  background-color: #08AC9D;
+}
+
+.perfil-size {
+  width: 45%;
+  margin: 0 auto;
 }
