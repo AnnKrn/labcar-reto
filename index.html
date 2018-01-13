@@ -17,7 +17,7 @@
       <!--Barra de navegación-->
       <nav class="navbar navbar-default white">
         <div class="container-fluid">
-          <div class="col-md-offset-1">
+
             <div class="navbar-header">
               <button type="button" class="navbar-toggle collapsed col-xs-pull-10" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                 <span class="sr-only">Toggle navigation</span>
@@ -28,11 +28,9 @@
               <!--offsets para cambiar el orden del logo y menu en movil-->
               <a class="navbar-brand col-xs-1 col-xs-push-2 img-responsive" href="#"><img alt="logo" src="assets/images/logoForma.png"></a>
             </div>
-          </div>
           <!-- Collect the nav links, forms, and other content for toggling -->
-          <div class="col-md-offset-8">
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-              <ul class="nav navbar-nav">
+              <ul class="nav navbar-nav navbar-right">
                 <li><a href="#">Viaja</a></li>
                 <li><a href="#">Conduce</a></li>
                 <li><a href="#log_in" class="btn" data-toggle="modal">Inicia Sesión</a></li>
@@ -87,41 +85,115 @@
                 </div>
               </div>
             </div>
-          </div>
         </div>
       </nav>
-
 
       <!--Portada con formulario-->
       <div id="form_image" class="row">
         <!--Jumbotron botones de formiulario Desktop. Entre en panico y quite elJumbotron-->
-        <div class="col-md-5 col-md-offset-7 corporate-yellow hidden-xs hidden-sm">
-          <div class="row">
-            <div class="col-md-12">
-                <h3>Disfruta del viaje</h3>
-                <h3>Eres dueño de tu tiempo</h3>
-                <p>Viaja con Labcar</p>
-                <p><a class="btn btn-default btn-lg" href="#" role="button">REGÍSTRATE</a></p>
-              </div>
+        <!-- Jumbotron is back >.< -->
+        <div class="jumbotron col-xs-8 col-xs-offset-4 col-md-5 col-md-offset-7 corporate-yellow">
+          <!-- para movil -->
+          <h3 class="hidden-md hidden-lg visible-xs-10">Comienza a viajar con LabCar</h3>
+          <p><a class="btn btn-default btn-sm hidden-md hidden-lg visible-xs-10" href="#" role="button">Descarga el app</a></p>
+          <!-- para desktop -->
+          <h3 class="hidden-xs hidden-sm">Disfruta del viaje</h3>
+          <h3 class="hidden-xs hidden-sm">Eres dueño de tu tiempo</h3>
+          <p class="hidden-xs hidden-sm">Viaja con  <span><img src="assets/images/logoBlanco.png"alt="logo Blanco" class=""></span></p>
+          <br class="hidden-xs hidden-sm">
+          <p><a class="btn btn-default btn-md hidden-xs hidden-sm" href="#register" role="button" data-toggle="modal">REGÍSTRATE</a></p>
               <!--faltan lineas en "o bien"-->
-            <div class="col-md-12 text-center">
-              <small class="text-center">o bien</small>
-            </div>
-            <hr>
-            <div class="col-md-12">
-              <p><a class="btn btn-default btn-lg" href="#" role="button">Convierte en un conductor</a></p>
+          <p class="text-center hidden-xs hidden-sm text-center"><small>o bien</small></p>
+          <!-- <hr> -->
+          <br class="hidden-xs hidden-sm">
+          <p><a class="btn btn-default btn-md hidden-xs hidden-sm" href="#" role="button">Convierte en un conductor</a></p>
+        </div>
+        <!-- Modal btn Registrate -->
+        <div class="modal fade" id="register">
+          <div class="modal-dialog">
+            <div class="modal-content grey-modal">
+              <!--header de modal  -->
+              <div class="modal-header">
+                <!-- boton que cierra el modal -->
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <button type="button" class="btn btn-lg btn-block grey-footer">¿Ya tienes una cuenta?</button>
+              </div>
+              <!-- formulario del modal -->
+              <div class="modal-body">
+                <form class="form-horizontal">
+                  <p class="text-center">O CREA UNA CUENTA NUEVA</p>
+                  <div class="form-group">
+                    <!-- nombre -->
+                    <div class="col-md-6">
+                      <label for="inputRegisterName" class="control-label"></label>
+                      <input type="text" class="form-control" id="inputRegisterName" placeholder="Nombre">
+                    </div>
+                    <!-- apellido -->
+                    <div class="col-md-6">
+                      <label for="inputRegisterLastName" class="control-label"></label>
+                      <input type="text" class="form-control" id="inputRegisterLastName" placeholder="Apellido">
+                    </div>
+                  </div>
+                  <!-- correo -->
+                  <div class="form-group">
+                    <div class="col-md-12">
+                      <label for="inputRegisterMail" class="control-label"></label>
+                      <input type="password" class="form-control" id="inputRegisterMail" placeholder="Correo Electronico ejemplo@correo.mx">
+                    </div>
+                  </div>
+                  <!-- telefono -->
+                  <div class="form-group">
+                    <div class="col-md-12">
+                      <label for="inputRegisterTel" class="control-label"></label>
+                      <input type="tel" class="form-control" id="inputRegisterTel" placeholder="Teléfono">
+                    </div>
+                  </div>
+                  <!-- contraseña -->
+                  <div class="form-group">
+                    <div class="col-md-12">
+                      <label for="inputRegisternPassword" class="control-label"></label>
+                      <input type="password" class="form-control" id="inputRegisternPassword" placeholder="Contraseña">
+                    </div>
+                  </div>
+                  <!-- ciudad -->
+                  <div class="form-group">
+                    <div class="col-md-12">
+                      <label for="inputRegisterCity" class="control-label"></label>
+                      <input type="text" class="form-control" id="inputRegisterCity" placeholder="Ciudad">
+                    </div>
+                  </div>
+                  <!-- código de invitación -->
+                  <div class="form-group">
+                    <div class="col-md-12">
+                      <label for="inputRegisterCode" class="control-label"></label>
+                      <input type="number" class="form-control" id="inputRegisterCode" placeholder="(Opcional) Código de invitación">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="col-md-12">
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-default dropdown-toggle btn-block btn-group-center" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          ¿Cómo te enteraste de nosotros? <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a href="#">Internet</a></li>
+                          <li><a href="#">Recomendación</a></li>
+                          <li><a href="#">Televisión</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <!-- Envio de formulario -->
+                    <div class="col-md-12">
+                      <button type="submit" class="btn btn-primary btn-lg btn-block">ENVIAR</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
             </div>
           </div>
         </div>
-          <!--Formulario descaga app Movil.-->
-        <div class="col-xs-8 col-xs-offset-4 corporate-yellow visible-xs-10 hidden-md hidden-lg">
-          <div class="row">
-            <div class="col-xs-12">
-              <h1 class="ttulo-prueba">Comienza a viajar con LabCar</h1>
-              <p><a class="btn btn-default btn-lg" href="#" role="button">Descarga el app</a></p>
-            </div>
-          </div>
-        </div>
+        <!-- TREMINAR Modal Conviertete en Conductor -->
+
       </div>
         <!--celular-->
       <div class="row corporate-yellow">
@@ -141,30 +213,28 @@
         <!--Media a la centrado movil-->
         <div class="media col-xs-10 col-xs-offset-1 visible-xs-11 hidden-md hidden-lg">
           <div class="row">
-                <div class="col-xs-10">
-                  <div class="media-left media-middle img-responsive">
-                    <h1 class="media-heading hidden-md hidden-lg ttulo-prueba">Descarga la nueva app</h1>
-
-                    <img class="media-object img-responsive " src="assets/images/iPhone6Plus.png" alt="iPhone">
-
-                    <h3 class="media-heading hidden-md hidden-lg">Llega a tu destino aún más rápido</h3>
-                  </div>
-                </div>
+            <div class="col-xs-10">
+              <div class="media-left media-middle img-responsive">
+                <h3 class="media-heading hidden-md hidden-lg font-size text-center">La nueva app</h3>
+                <img class="media-object img-responsive " src="assets/images/iPhone6Plus.png" alt="iPhone">
+                <p class="media-heading hidden-md hidden-lg text-center">Llega a tu destino aún más rápido</p>
               </div>
+            </div>
+          </div>
         </div>
       </div>
         <!--Segunda imagen con formulario-->
       <div id="drive_image" class="row">
             <!--Jumbotron botones de formiulario "conduce cuando quieras"-->
         <div class=" col-xs-12 col-md-5 col-md-offset-7 white-none">
-              <div class="row">
+          <div class="row">
                 <div class="col-md-9 col-md-offset-1 col-xs-9 col-xs-offset-1">
                   <h2>Conduce cuando quieras</h2>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                   <p><a class="btn corporate-yellow btn-lg" href="#" role="button">REGÍSTRATE</a></p>
                 </div>
               </div>
-            </div>
+        </div>
       </div>
         <!--Seccion del mapa Usar o no Media??-->
       <div class="row corporate-yellow">
@@ -172,44 +242,36 @@
         <div class="col-md-10 col-md-offset-1">
           <div class="row">
             <div class="col-md-6 corporate-yellow">
-              <div class="col-md-12">
-                    <h1>Tarifa</h1>
-                    <p>Consulta las tarifas Labcar aquí</p>
+              <div class="col-md-12 col-xs-11 col-xs-offset-1">
+                <h3>Tarifa</h3>
+                <p>Consulta las tarifas Labcar aquí</p>
+              </div>
+              <div class="col-md-12 col-xs-11 col-xs-offset-1">
+                <form id="where_to" class="form-horizontal">
+                  <!--partida-->
+                  <div class="form-group">
+                    <label for="inputSesionName" class="col-md-1 col-xs-1 control-label"><img src="assets/images/shape.png" alt=""></label>
+                    <div class="col-md-9 col-xs-9">
+                      <input type="text" class="form-control corporate-yellow" id="exampleInputName1" placeholder="Ingrese su punto de partida">
+                    </div>
                   </div>
-              <div class="col-md-12">
-                    <form id="where_to">
-                      <!--partida-->
-                      <div class="form-group">
-                        <div class="row">
-                          <div class="col-md-1 col-xs-1 padding-img-where-to">
-                            <img src="assets/images/shape.png" alt="">
-                          </div>
-                          <div class="col-md-9 col-xs-9">
-                            <label for="exampleInputName2"></label>
-                            <input type="text" class="form-control corporate-yellow inline-block-md" id="exampleInputName1" placeholder="Ingrese su punto de partida">
-                          </div>
-                        </div>
-                      </div>
-                     <!--destino-->
-                      <div class="form-group">
-                       <div class="row">
-                         <div class="col-md-1 col-xs-1 padding-img-where-to">
-                            <img src="assets/images/shape2.png" alt="">
-                         </div>
-                         <div class="col-md-9 col-xs-9">
-                           <label for="exampleInputName2"></label>
-                           <input type="text" class="form-control corporate-yellow" id="exampleInputName2" placeholder="Ingrese su destino">
-                         </div>
-                       </div>
-                     </div>
-                      <button type="submit" class="btn btn-default">¡TRAZAR RUTA!</button>
-                    </form>
+                  <!--destino-->
+                  <div class="form-group">
+                    <label for="inputSesionPassword" class="col-md-1 col-xs-1 control-label"><img src="assets/images/shape2.png" alt=""></label>
+                    <div class="col-md-9 col-xs-9">
+                      <input type="text" class="form-control corporate-yellow" id="exampleInputName2" placeholder="Ingrese su destino">
+                    </div>
                   </div>
+                  <div class="form-group col-md-9 col-xs-9">
+                    <button type="submit" class="btn btn-default">¡TRAZAR RUTA!</button>
+                  </div>
+                </form>
+              </div>
             </div>
             <!--aqui iria el mapa, ahora solo es img-->
             <div class="col-md-6">
-                  <img class="img-responsive img-rounded" src="assets/images/maps.png" alt="maps">
-                </div>
+              <img class="img-responsive img-rounded" src="assets/images/maps.png" alt="maps">
+            </div>
           </div>
         </div>
       </div>
@@ -219,7 +281,7 @@
         <div class="col-md-10 col-md-offset-1">
           <!--logo blanco -->
           <div class="row">
-            <img src="assets/images/logoBlanco.png"alt="logo Blanco" class="img-responsive col-xs-4">
+            <img src="assets/images/logoBlanco.png"alt="logo Blanco" class="img-responsive col-xs-4 col-md-2">
           </div>
           <hr>
           <!--listas e iconos -->
@@ -283,8 +345,7 @@
             <small class="col-xs-12">&#169; 2017 LabCar technologies Inc.</small>
           </div>
         </div>
-
-      </fooyer>
+      </footer>
     </section>
 
 

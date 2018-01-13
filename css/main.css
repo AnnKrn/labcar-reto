@@ -1,7 +1,7 @@
 /* Los estilos de tu proyecto */
 #form_image {
   background-image: url(../assets/images/taxi.jpg);
-  height: 80vh;
+  height: 100vh;
   background-position: bottom;
   background-size: cover;
 }
@@ -21,11 +21,10 @@ form#where_to  div.form-group  #exampleInputName2::placeholder {
   color: white;
 }
 
-/* estilocoluma disfruta viaje, We want back Jumbotron */
-#form_image > div {
-  padding-left: 3%;
-  padding-bottom: 3%;
+/* We want Jumbotron back and we had*/
+#form_image > div.jumbotron {
   margin-top: 15%;
+  border-radius: 0;
 }
 
 body > section > div:nth-child(3) > div.media {
@@ -40,9 +39,8 @@ body > section > div:nth-child(3) > div.media {
   padding: 10% 0;
 }
 
-br {
-  width: 100%;
-  border: 1px solid white;
+input#exampleInputName1.formcontrol.corporate-yellow::placeholder{
+  color: white;
 }
 
 body > section > div:nth-child(5) > div > div > div.col-md-6.corporate-yellow {
@@ -53,12 +51,8 @@ body > section > div:nth-child(5) > div > div > div:nth-child(2) > img {
   padding: 10% 0;
 }
 
-#where_to > div:nth-child(1) > div > div.col-md-1 > img {
-  margin-top: 20%;
-}
-
 body > section > footer > div > div:nth-child(1) > img {
-  padding-top: 8%;
+  padding-top: 5%;
 }
 
 body > section > footer > div > div:nth-child(3) > div.col-md-2 {
@@ -68,12 +62,9 @@ body > section > footer > div > div:nth-child(3) > div.col-md-2 {
 body > section > footer > div > div:nth-child(3) > div.col-md-3 {
   padding-top: 25%;
 }
-.padding-img-where-to {
-  padding-top: 6%;
-}
 
 /*clase para combiar tamaño de letra */
-.ttulo-prueba {
+.font-size {
   font-size: 1.5em;
 }
 
@@ -107,4 +98,8 @@ body > section > footer > div > div:nth-child(3) > div.col-md-3 {
 .perfil-size {
   width: 45%;
   margin: 0 auto;
+}
+
+.grey-modal{
+  background-color: #A9A9A9;
 }
