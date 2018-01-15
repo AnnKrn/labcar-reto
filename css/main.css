@@ -103,3 +103,29 @@ body > section > footer > div > div:nth-child(3) > div.col-md-3 {
 .grey-modal{
   background-color: #A9A9A9;
 }
+
+/* lineas before and after*/
+.fancy {
+  line-height: 0.5;
+}
+.fancy span {
+  display: inline-block;
+  position: relative;
+}
+.fancy span:before,
+.fancy span:after {
+  content: "";
+  position: absolute;
+  height: 105%;
+  border-bottom: 1px solid white;
+  top: 0;
+  width: 220%;
+}
+.fancy span:before {
+  right: 100%;
+  margin-right: 15px;
+}
+.fancy span:after {
+  left: 100%;
+  margin-left: 15px;
+}

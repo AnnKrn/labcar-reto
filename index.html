@@ -9,7 +9,7 @@
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
-    <title>Lab-<ar</title>
+    <title>Lab-&lt;ar</title>
   </head>
   <body>
       <!--Inicia lo bueno, el contenido-->
@@ -17,77 +17,75 @@
       <!--Barra de navegación-->
       <nav class="navbar navbar-default white">
         <div class="container-fluid">
-
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle collapsed col-xs-pull-10" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed col-xs-pull-10 col-sm-pull-10" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
               <!--offsets para cambiar el orden del logo y menu en movil-->
-              <a class="navbar-brand col-xs-1 col-xs-push-2 img-responsive" href="#"><img alt="logo" src="assets/images/logoForma.png"></a>
-            </div>
+            <a class="navbar-brand col-xs-1 col-xs-push-2 col-sm-1 col-sm-push-2 img-responsive" href="#"><img alt="logo" src="assets/images/logoForma.png"></a>
+          </div>
           <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-              <ul class="nav navbar-nav navbar-right">
-                <li><a href="#">Viaja</a></li>
-                <li><a href="#">Conduce</a></li>
-                <li><a href="#log_in" class="btn" data-toggle="modal">Inicia Sesión</a></li>
-              </ul>
-            </div>
-            <!-- inicia ventana modal Inicio de sesion -->
-            <div class="modal fade" id="log_in">
-              <div class="modal-dialog">
-                <div class="modal-content modal-color-login">
-                  <!--header de modal  -->
-                  <div class="modal-header">
-                    <!-- boton que cierra el modal -->
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <img class="img-responsive perfil-size" src="assets/images/silueta-perfil.jpg" alt="perfil">
-                  </div>
-                  <!-- formulario del modal -->
-                  <div class="modal-body">
-                    <form class="form-horizontal">
-                      <div class="form-group">
-                        <label for="inputSesionName" class="col-sm-2 control-label"><i class="fa fa-user" aria-hidden="true"></i></label>
-                        <div class="col-sm-8">
-                          <input type="text" class="form-control" id="inputSesionName" placeholder="Username">
+          <div class="collapse navbar-collapse" id="navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#">Viaja</a></li>
+              <li><a href="#">Conduce</a></li>
+              <li><a href="#log_in" class="btn" data-toggle="modal">Inicia Sesión</a></li>
+            </ul>
+          </div>
+          <!-- inicia ventana modal Inicio de sesion -->
+          <div class="modal fade" id="log_in">
+            <div class="modal-dialog">
+              <div class="modal-content modal-color-login">
+                <!--header de modal  -->
+                <div class="modal-header">
+                  <!-- boton que cierra el modal -->
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <img class="img-responsive perfil-size" src="assets/images/silueta-perfil.jpg" alt="perfil">
+                </div>
+                <!-- formulario del modal -->
+                <div class="modal-body">
+                  <form class="form-horizontal">
+                    <div class="form-group">
+                      <label for="inputSesionName" class="col-xs-2 col-md-2 control-label"><i class="fa fa-user" aria-hidden="true"></i></label>
+                      <div class="col-xs-8 col-md-8">
+                        <input type="text" class="form-control" id="inputSesionName" placeholder="Username">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="inputSesionPassword" class="col-xs-2 col-md-2 control-label"><i class="fa fa-lock" aria-hidden="true"></i></label>
+                      <div class="col-xs-8 col-md-8">
+                        <input type="password" class="form-control" id="inputSesionPassword" placeholder="Password">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="col-sm-offset-2 col-sm-8">
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox"> Remember me
+                          </label>
                         </div>
                       </div>
-                      <div class="form-group">
-                        <label for="inputSesionPassword" class="col-sm-2 control-label"><i class="fa fa-lock" aria-hidden="true"></i></label>
-                        <div class="col-sm-8">
-                          <input type="password" class="form-control" id="inputSesionPassword" placeholder="Password">
-                        </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="col-sm-offset-2 col-sm-8">
+                        <button type="submit" class="btn corporate-yellow">LOGING</button>
                       </div>
-                      <div class="form-group">
-                        <div class="col-sm-offset-2 col-sm-8">
-                          <div class="checkbox">
-                            <label>
-                              <input type="checkbox"> Remember me
-                            </label>
-                          </div>
-                        </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="col-sm-offset-2 col-sm-8">
+                        <p>Forgot password?<a href="#">Click Here</a></p>
                       </div>
-                      <div class="form-group">
-                        <div class="col-sm-offset-2 col-sm-8">
-                          <button type="submit" class="btn corporate-yellow">LOADING</button>
-                        </div>
-                      </div>
-                      <div class="form-group">
-                        <div class="col-sm-offset-2 col-sm-8">
-                          <p>Forgot password?<a href="#">Click Here</a></p>
-                        </div>
-                      </div>
-                    </form>
-                  </div>
+                    </div>
+                  </form>
                 </div>
               </div>
             </div>
+          </div>
         </div>
       </nav>
-
       <!--Portada con formulario-->
       <div id="form_image" class="row">
         <!--Jumbotron botones de formiulario Desktop. Entre en panico y quite elJumbotron-->
@@ -103,10 +101,10 @@
           <br class="hidden-xs hidden-sm">
           <p><a class="btn btn-default btn-md hidden-xs hidden-sm" href="#register" role="button" data-toggle="modal">REGÍSTRATE</a></p>
               <!--faltan lineas en "o bien"-->
-          <p class="text-center hidden-xs hidden-sm text-center"><small>o bien</small></p>
+          <p class="text-center hidden-xs hidden-sm text-center fancy"><span><small>o bien</small></span></p>
           <!-- <hr> -->
           <br class="hidden-xs hidden-sm">
-          <p><a class="btn btn-default btn-md hidden-xs hidden-sm" href="#" role="button">Convierte en un conductor</a></p>
+          <p><a class="btn btn-default btn-md hidden-xs hidden-sm" href="#driver" role="button" data-toggle="modal">Convierte en un conductor</a></p>
         </div>
         <!-- Modal btn Registrate -->
         <div class="modal fade" id="register">
@@ -169,18 +167,86 @@
                       <input type="number" class="form-control" id="inputRegisterCode" placeholder="(Opcional) Código de invitación">
                     </div>
                   </div>
+                  <!-- auto de 4 puertas -->
                   <div class="form-group">
                     <div class="col-md-12">
-                      <div class="btn-group">
-                        <button type="button" class="btn btn-default dropdown-toggle btn-block btn-group-center" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          ¿Cómo te enteraste de nosotros? <span class="caret"></span>
-                        </button>
-                        <ul class="dropdown-menu">
-                          <li><a href="#">Internet</a></li>
-                          <li><a href="#">Recomendación</a></li>
-                          <li><a href="#">Televisión</a></li>
-                        </ul>
-                      </div>
+                      <p class="text-left">¿Cómo te enteraste de nosotros?</p>
+                      <select class="form-control ">
+                        <option>Internet</option>
+                        <option>Anuncio</option>
+                      </select>
+                    </div>
+                  </div>
+                  <!-- Envio de formulario -->
+                  <div class="form-group">
+                    <div class="col-md-12">
+                      <button type="submit" class="btn btn-primary btn-lg btn-block">ENVIAR</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- TREMINAR Modal Conviertete en Conductor -->
+        <!-- Modal btn Registrate -->
+        <div class="modal fade" id="driver">
+          <div class="modal-dialog">
+            <div class="modal-content grey-modal">
+              <!--header de modal  -->
+              <div class="modal-header">
+                <!-- boton que cierra el modal -->
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              </div>
+              <!-- formulario del modal -->
+              <div class="modal-body">
+
+                <form class="form-horizontal">
+                  <div class="form-group">
+                    <!-- auto de 4 puertas -->
+                    <div class="col-md-12">
+                      <p class="text-left"><strong>¿Tienes vehiculos de 4 puertas?</strong></p>
+                      <select class="form-control">
+                        <option>Si</option>
+                        <option>No</option>
+                      </select>
+                    </div>
+                    <!-- marca de vehiculo -->
+                    <div class="col-md-12">
+                      <p class="text-left"><strong>Marca</strong></p>
+                      <select class="form-control">
+                        <option>Nissan</option>
+                        <option>Volkswagen</option>
+                        <option>Toyota</option>
+                        <option>Ford</option>
+                      </select>
+                      <p>¿No ves tu vehículo en la lista? envia un correo al <a href="#">somosmdv@uber.com</a></p>
+                    </div>
+                    <!-- modelo de vehiculo -->
+                    <div class="col-md-12">
+                      <p class="text-left"><strong>Modelo</strong></p>
+                      <select class="form-control">
+                        <option>Modelo 1</option>
+                        <option>Modelo 2</option>
+                        <option>Modelo 3</option>
+                        <option>Modelo 4</option>
+                      </select>
+                    </div>
+                    <!-- año de vehiculo -->
+                    <div class="col-md-12">
+                      <p class="text-left"><strong>Año</strong></p>
+                      <select class="form-control">
+                        <option>2017</option>
+                        <option>2016</option>
+                        <option>2015</option>
+                        <option>2014</option>
+                      </select>
+                    </div>
+                    <!-- Matricula -->
+                    <div class="col-md-12">
+                      <label for="matricula" class="control-label"></label>
+                      <input type="number" class="form-control" id="matricula" placeholder="Número de matricula">
+                      <p class="text-justify">La información de la matricula ayuda a los clientes a identificar su vehículo</p>
                     </div>
                     <!-- Envio de formulario -->
                     <div class="col-md-12">
@@ -192,8 +258,6 @@
             </div>
           </div>
         </div>
-        <!-- TREMINAR Modal Conviertete en Conductor -->
-
       </div>
         <!--celular-->
       <div class="row corporate-yellow">
@@ -228,12 +292,13 @@
             <!--Jumbotron botones de formiulario "conduce cuando quieras"-->
         <div class=" col-xs-12 col-md-5 col-md-offset-7 white-none">
           <div class="row">
-                <div class="col-md-9 col-md-offset-1 col-xs-9 col-xs-offset-1">
-                  <h2>Conduce cuando quieras</h2>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                  <p><a class="btn corporate-yellow btn-lg" href="#" role="button">REGÍSTRATE</a></p>
-                </div>
-              </div>
+            <div class="col-md-9 col-md-offset-1 col-xs-9 col-xs-offset-1">
+              <h2>Conduce cuando quieras</h2>
+              <p>Lab-&lt;ar es una opción flexible para alcanzar tus metas financieras</p>
+              <p><a class="btn corporate-yellow btn-lg hidden-xs hidden-sm" href="#" role="button">Conviértete en conductor</a></p>
+              <p><a class="btn corporate-yellow btn-md hidden-md hidden-lg visible-xs-12" href="#" role="button">REGÍSTRATE</a></p>
+            </div>
+          </div>
         </div>
       </div>
         <!--Seccion del mapa Usar o no Media??-->
@@ -244,7 +309,7 @@
             <div class="col-md-6 corporate-yellow">
               <div class="col-md-12 col-xs-11 col-xs-offset-1">
                 <h3>Tarifa</h3>
-                <p>Consulta las tarifas Labcar aquí</p>
+                <p>Consulta las tarifas Lab-&lt;ar aquí</p>
               </div>
               <div class="col-md-12 col-xs-11 col-xs-offset-1">
                 <form id="where_to" class="form-horizontal">
@@ -275,7 +340,7 @@
           </div>
         </div>
       </div>
-          <!--footer -->
+        <!--footer -->
       <footer class="row grey-footer">
         <!--contenido principal -->
         <div class="col-md-10 col-md-offset-1">
